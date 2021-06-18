@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ebebad;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ff9eb5;
+}
+
+.header {
+	width: 100%;
+	padding: 20px 40px;
+	background-color: #ff6f91;
+	color: white;
+	box-sizing: border-box;
+}
+
+/* dropdown */
+
+.dropdown {
+	float: right;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-right: 50px;
+}
+
+.dropdown p {
+	font-size: 24px;
+	padding: 14px 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown-list {
+	display: none;
+	position: absolute;
+	background-color: white;
+	right: 30px;
+	width: 200px;
+	box-shadow: 0 0 13px 0 #ff6f91;
+}
+
+.dropdown-list a {
+	display: block;
+	font-size: 16px;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.dropdown-list a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-list {
+	display: block;
+}
+
+/* main code */
+
+.header h1 {
+	font-size: 32px;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 50px;
+	text-shadow: 1.2px 1.2px #ff1cb7;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.first {
+	width: 100%;
+	height: 700px;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+	background-image: url(../imek/wallpaper.png);
+	background-position: 0 -50px;
+	background-size: cover;
+}
+
+.first h1{
+	margin-top: 150px;
+	font-size: 80px;
+	font-weight: bolder;
+	color: #ff6f91;
+	text-shadow: 2px 1px rgba(0,0,0,1);
+}
+
+.first .second-h1 {
+	margin-top: 50px;
+}
+
+.gallery {
+	box-sizing: border-box;
+	background-color: #cdf0c2;
+}
+
+.first a {
+	padding: 10px;
+	display: inline-block;
+	font-weight: bold;
+	margin: 50px 50px;
+	color: black;
+	font-size: 32px;
+	text-shadow: 1px 1px #ff1cb7;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+.first a:hover {
+	color: white;
+	text-shadow: 1px 1px #ff1cb7;
+	transition: .3s ease;
+}
+
+.gallery .text1 {
+	width: 483px;
+	height: 800px;
+	float: left;
+	position: relative;
+}
+
+.gallery .rina{
+	position: relative;
+	float: left;
+	width: 347.7px;
+	opacity: 0.7;
+	transition: .5s ease;
+	height: 800px;
+	background-size: cover;
+	background-position: -500px 0;
+	background-image: url(../animalsuit/rinabefore.png);
+}
+
+.gallery .shizuko {
+	float: left;
+	transition: .5s ease;
+	position: relative;
+	opacity: 0.7;
+	width: 347.7px;
+	height: 800px;
+	background-size: cover;
+	background-position: -675px 0;
+	background-image: url(../animalsuit/shizukobefore.png);
+}
+
+.gallery .kasumin {
+	float: left;
+	transition: .5s ease;
+	position: relative;
+	opacity: 0.7;
+	width: 347.7px;
+	height: 800px;
+	background-size: cover;
+	background-position: -620px 0;
+	background-image: url(../animalsuit/kasumibefore.png);	
+}
+
+.text1, .text2, .text3 h1 {
+	line-height: 800px;
+	font-size: 50px;
+	color: white;
+	opacity: 1;
+	font-weight: bold;
+	text-align: center;
+}
+
+.gallery2 {
+	box-sizing: border-box;
+	background-color: #adadeb;
+}
+
+.gallery2 .text {
+	width: 483px;
+	height: 800px;
+	position: relative;
+	float: right;
+}
+
+.gallery2 .ai{
+	position: relative;
+	float: left;
+	width: 347.7px;
+	opacity: 0.7;
+	transition: .5s ease;
+	height: 800px;
+	background-size: cover;
+	background-position: -640px 0;
+	background-image: url(../animalsuit/aibefore.png);
+}
+
+.gallery2 .setsuna {
+	position: relative;
+	float: left;
+	transition: .5s ease;
+	opacity: 0.7;
+	width: 347.7px;
+	height: 800px;
+	background-size: cover;
+	background-position: -635px 0;
+	background-image: url(../animalsuit/setsunabefore.png);
+}
+
+.gallery2 .ayumu {
+	position: relative;
+	float: left;
+	transition: .5s ease;
+	opacity: 0.7;
+	width: 347.7px;
+	height: 800px;
+	background-size: cover;
+	background-position: -680px 0;
+	background-image: url(../animalsuit/ayumubefore.png);
+}
+
+.gallery3 {
+	box-sizing: border-box;
+	background-color: #dc6f6f;
+}
+
+.gallery3 .text3 {
+	position: relative;
+	float: left;
+	width: 483px;
+	height: 800px;
+}
+
+.gallery3 .karin {
+	position: relative;
+	float: left;
+	opacity: 0.7;
+	transition: .5s ease;
+	width: 347.7px;
+	height: 800px;
+	background-size: cover;
+	background-position: -465px 0;
+	background-image: url(../animalsuit/karinbefore.png);
+}
+
+.gallery3 .kanata {
+	position: relative;
+	opacity: 0.7;
+	float: left;
+	transition: .5s ease;
+	width: 347.7px;
+	height: 800px;
+	background-size: cover;
+	background-position: -730px 0;
+	background-image: url(../animalsuit/kanatabefore.png);
+}
+
+.gallery3 .emma {
+	position: relative;
+	float: left;
+	opacity: 0.7;
+	transition: .5s ease;
+	width: 347.7px;
+	height: 800px;
+	background-size: cover;
+	background-position: -590px 0;
+	background-image: url(../animalsuit/emmabefore.png);
+}
+
+
+.rina:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #9aa3aa;
+	background-image: url(../animalsuit/rina.png);
+	background-position: -615px 0;
+}
+
+.kasumin:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #ffe41c;
+	background-image: url(../animalsuit/kasumi.png);
+	background-position: -600px 0;
+}
+
+.shizuko:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #73c9f3;
+	background-image: url(../animalsuit/shizuko.png);
+	background-position: -620px 0;
+}
+
+.ayumu:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #f27d95;
+	background-image: url(../animalsuit/ayumu.png);
+	background-position: -690px 0;
+}
+
+.ai:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #ff5622;
+	background-image: url(../animalsuit/ai.png);
+	background-position: -630px 0;
+}
+
+.setsuna:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #de1733;
+	background-image: url(../animalsuit/setsuna.png);
+	background-position: -560px 0;
+}
+
+.karin:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #4a60c1;
+	background-image: url(../animalsuit/karin.png);
+	background-position: -550px 0;
+}
+
+.kanata:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #aa649d;
+	background-image: url(../animalsuit/kanata.png);
+	background-position: -580px 0;
+}
+
+.emma:hover {
+	cursor: pointer;
+	transition: .5s ease;
+	opacity: 1;
+	z-index: 2;
+	box-shadow: 0 0 9px 5px #7fc478;
+	background-image: url(../animalsuit/emma.png);
+	background-position: -530px 0;
+}
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #ff6f91;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.footer h1 {
+	text-align: center;
+	line-height: 100px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	transition: .5s ease;
+}
+
+.footer a:hover {
+	text-shadow: 3px 3px #ff1cb7;
+	transition: .5s ease;
+}
+
+.cp:before,
+.cp:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cp:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cp {
+    *zoom: 1;
+}
+
+
+
+
